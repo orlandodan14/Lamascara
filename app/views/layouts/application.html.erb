@@ -34,6 +34,15 @@
   </head>
 
   <body>
-    <%= yield %>
+
+  	<%= render "shared/preloader" %>
+
+  	<div class="main-wrapper">
+
+  		<%= render "shared/header" %>
+
+    	<%= yield %>
+    	
+	</div>
   </body>
 </html>
