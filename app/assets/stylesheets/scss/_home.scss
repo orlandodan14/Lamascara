@@ -115,14 +115,14 @@
 .articlesSection{
 	padding: 50px 0;
 	@include tablet{
-		padding: 100px 0 95px 0;
+		padding: 50px 0;
 	}
 }
 .articlesArea{
 	background-color: #fbfbfb;
 	padding: 50px 0;
 	@include tablet{
-		padding: 100px 0 95px 0;
+		padding: 50px 0;
 	}
 }
 .articleContent{
@@ -424,7 +424,7 @@
 }
 /*=== 5.7 COUNT UP SECTION ===*/
 .countUpSection{
-	background-image: url("../img/background/bg-countdown.jpg");
+	background-image: url("../img/background/chica1.jpg");
 	background-attachment: fixed;
 	width: 100%;
 	-webkit-background-size: cover;
@@ -503,7 +503,7 @@
 		}
 	}
 	&.countUpVerTwo{
-		background-image: url("../img/background/bg-countdown-1.jpg");
+		background-image: url("../img/background/chica2.jpg");
     padding: 60px 0;
     @include tablet{
     	padding: 120px 0;
