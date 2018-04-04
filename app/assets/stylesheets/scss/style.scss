@@ -57,6 +57,7 @@
 	10.5 DASHBOARD LISTING DETAILS
 11. MAIN SLIDER
 12. RTL
+*/
 
 /*=== VARIABLES ===*/
 $primary-color:#CB2906;
@@ -75,7 +76,7 @@ $bg-lisht-gray: #f8f8f8;
   @return mix(white, $primary-color, $percentage);
 }
 
-===================== */
+/* ===================== */
 @import 'partials/mixins';
 @import 'partials/variables';
 @import 'partials/media-query';
