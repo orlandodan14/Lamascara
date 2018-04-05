@@ -1,0 +1,565 @@
+	<!-- SLIDER SECTION -->
+<section class="main-slider" data-loop="true" data-autoplay="true" data-interval="7000">
+  <div class="inner">
+    
+    <!-- Slide One -->
+    <div class="slide slide1" style="background-image: url(<%= asset_path "img/banner/chica1.jpg" %>);">
+      <div class="container">
+        <div class="slide-inner1 common-inner">
+          <span class="h1 from-bottom">Elije a tu pareja</span>
+          <span class="h4 from-bottom">La Mascara te ayuda a encontrar el placer cerca de ti</span><br>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide Two -->
+    <div class="slide slide2" style="background-image: url(<%= asset_path "img/banner/chica2.jpg" %>);">
+      <div class="container">
+        <div class="slide-inner2 common-inner">
+          <span class="h1 from-bottom">Elije a tu pareja</span>
+          <span class="h4 from-bottom">La Mascara te ayuda a encontrar el placer cerca de ti</span><br>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide Three -->
+    <div class="slide slideResize slide4" style="background-image: url(<%= asset_path "img/banner/chica3.jpg" %>);">
+      <div class="container">
+        <div class="common-inner slide-inner4">
+          <span class="h1 from-bottom">Elije a tu pareja</span>
+          <span class="h4 from-bottom">La Mascara te ayuda a encontrar el placer cerca de ti</span><br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CARS SECTION -->
+<section class="clearfix filterProtfolio">
+	<div class="container">
+
+		<%= render 'shared/search' %>
+
+		<div class="row">
+	      <div class="col-xs-12">
+	        <div class="filter-container isotopeFilters">
+	          <ul class="list-inline filter">
+	            <li class="active"><a href="#" data-filter="*">Populares</a></li>
+	            <li><a href="#" data-filter=".recentItem">Recientes</a></li>
+	            <li><a href="#" data-filter=".featuredItem">Destacadas</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="row isotopeContainer" id="container">    
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector featuredItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/girl-4.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-grid.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	          	<h2><a href="category-grid.html">Monica <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+	            <p>19 años <a href="category-grid.html">Agencia</a></p>
+	            <h3>$80,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santiago, Providencia</p>
+	          	<p>1% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/girl-1.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-grid.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	          	<h2><a href="category-grid.html">Aura <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+	            <p>25 años <a href="category-grid.html">Modelo</a></p>
+	            <h3>$50,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santiago, Centro</p>
+	          	<p>5% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/girl-3.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-grid-right.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	          	<h2><a href="category-grid-right.html">Yasenny <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+	            <p>31 años  <a href="category-grid-right.html">Independiente</a></p>
+	            <h3>$30,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santiago, Colina</p>
+	          	<p>100% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector featuredItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/girl-2.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-grid.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	          	<h2><a href="category-grid.html">Robersy <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+	            <p>29 años  <a href="category-grid.html">Independiente</a></p>
+	            <h3>$60,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santigo, Puente Alto</p>
+	          	<p>5% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/girl-3.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-grid.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	          	<h2><a href="category-grid.html">Fernanda <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+	            <p>25 años <a href="category-grid.html">Modelo</a></p>
+	            <h3>$90,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santiago, Centro</p>
+	          	<p>5% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/girl-4.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-grid.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	          	<h2><a href="category-grid.html">Karina <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+	            <p>25 años <a href="category-grid.html">Modelo</a></p>
+	            <h3>$100,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santiago, Centro</p>
+	          	<p>5% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector featuredItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/car-1.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-grid.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	          	<h2><a href="category-grid.html">Laura <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+	            <p>25 años <a href="category-grid.html">Modelo</a></p>
+	            <h3>$150,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santiago, Centro</p>
+	          	<p>5% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/car-2.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-list-left.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	            <p>25 años <a href="category-grid.html">Modelo</a></p>
+	            <h3>$50,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santiago, Centro</p>
+	          	<p>5% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/car-4.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-grid.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	          	<h2><a href="category-grid.html">Yiliany <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+	            <p>25 años <a href="category-grid.html">Modelo</a></p>
+	            <h3>$55,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santiago, Centro</p>
+	          	<p>5% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector featuredItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/car-5.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-list-full.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	          	<h2><a href="category-list-full.html">Yeseina <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+	            <p>25 años <a href="category-grid.html">Modelo</a></p>
+	            <h3>$30,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santiago, Centro</p>
+	          	<p>5% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector featuredItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/car-6.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-list-left.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	          	<h2><a href="category-list-left.html">Mimi <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+	            <p>25 años <a href="category-grid.html">Modelo</a></p>
+	            <h3>$50,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santiago, Centro</p>
+	          	<p>5% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
+	        <article class="">
+	          <figure>
+	            <%= image_tag("img/cars/car-3.jpg", alt: "Image Protfolio", class: "img-responsive") %>
+	            <div class="overlay-background">
+	              <div class="inner"></div>
+	            </div>
+	            <a href="category-grid-right.html">
+	              <div class="overlay">
+	                <div class="overlayInfo">
+	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
+	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
+	                </div>
+	              </div>
+	            </a>
+	          </figure>
+	          <div class="figureBody">
+	          	<h2><a href="category-grid-right.html">Yulibeth <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+	            <p>25 años <a href="category-grid.html">Modelo</a></p>
+	            <h3>$50,000</h3>
+	          </div>
+	          <div class="figureFooter">
+	          	<p>Santiago, Recoleta</p>
+	          	<p>5% Retoque de fotos</p>
+	          </div>
+	        </article>
+	      </div>
+
+	    </div>
+	</div>
+</section>
+
+<!-- SEARCH BROWSE SECTION -->
+<section class="clearfix bg-light pr">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-xs-12">
+				<div class="categoryBox">
+					<h2>Buscar por Categoria<a href="category-grid-full.html">Ver Todas</a></h2>
+					<ul class="list-inline listCategory">
+						<li><a href="category-grid-full.html"><span>Actriz Porno</span> (10)</a></li>
+						<li><a href="category-grid-full.html"><span>Rubia</span> (9)</a></li>
+						<li><a href="category-grid-full.html"><span>Morena</span> (5)</a></li>
+						<li><a href="category-grid-full.html"><span>Peliroja</span> ( 3)</a></li>
+						<li><a href="category-grid-full.html"><span>Americana</span> (5)</a></li>
+						<li><a href="category-grid-full.html"><span>Brasileña</span> (7)</a></li>
+						<li><a href="category-grid-full.html"><span>Univesitaria</span> (7)</a></li>
+						<li><a href="category-grid-full.html"><span>Madura</span> (3)</a></li>
+						<li><a href="category-grid-full.html"><span>Modelo</span> (2)</a></li>
+						<li><a href="category-grid-full.html"><span>Colombiana</span> (4)</a></li>
+						<li><a href="category-grid-full.html"><span>Latina</span> (12)</a></li>
+						<li><a href="category-grid-full.html"><span>Europea</span> (8)</a></li>
+						<li><a href="category-grid-full.html"><span>Asiatica</span> (2)</a></li>
+						<li><a href="category-grid-full.html"><span>Pechos grandes</span> (5)</a></li>
+						<li><a href="category-grid-full.html"><span>Idioma Ingles</span> (10)</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<div class="categoryBox">
+					<h2>Buscar por Servicios<a href="category-list-full.html">Ver Todos</a></h2>
+					<ul class="list-inline listCategory">
+						<li><a href="category-list-full.html"><span>Trato de Novia</span> (3)</a></li>
+						<li><a href="category-list-full.html"><span>Striptease</span> (2)</a></li>
+						<li><a href="category-list-full.html"><span>Orginas</span> (4)</a></li>
+						<li><a href="category-list-full.html"><span>Masaje</span> (12)</a></li>
+						<li><a href="category-list-full.html"><span>Con Juguetes</span> (8)</a></li>
+						<li><a href="category-list-full.html"><span>Fantasías</span> (2)</a></li>
+						<li><a href="category-list-full.html"><span>Duplex</span> (5)</a></li>
+						<li><a href="category-list-full.html"><span>Sexo Oral</span> (10)</a></li>
+						<li><a href="category-list-full.html"><span>Trios</span> (10)</a></li>
+						<li><a href="category-list-full.html"><span>Atención a Parejas</span> (9)</a></li>
+						<li><a href="category-list-full.html"><span>Ducha Erótica</span> (5)</a></li>
+						<li><a href="category-list-full.html"><span>Con Chicas</span> ( 3)</a></li>
+						<li><a href="category-list-full.html"><span>Sado</span> (5)</a></li>
+						<li><a href="category-list-full.html"><span>Besos</span> (7)</a></li>
+						<li><a href="category-list-full.html"><span>Fetichismo</span> (7)</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- COUNT UP SECTION -->
+<section class="clearfix countUpSection countUpVerTwo">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 col-xs-12">
+				<div class="countItem">
+					<div class="iconArea">
+						<i class="icon-listy icon-girl"></i>
+					</div>
+					<div class="totalCount"><span class="counter">15000</span>+<p>Anuncios</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<div class="countItem">
+					<div class="iconArea">
+						<i class="icon-listy icon-user-11"></i>
+					</div>
+					<div class="totalCount"><span class="counter">2500</span>+<p>Visitantes por dia</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<div class="countItem">
+					<div class="iconArea">
+						<i class="icon-listy icon-chat-3"></i>
+					</div>
+					<div class="totalCount"><span class="counter">3000</span>+<p>Scorts disponibles</p></div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<div class="countItem">
+					<div class="iconArea">
+						<i class="icon-listy icon-shield"></i>
+					</div>
+					<div class="totalCount"><span class="counter">190</span>+<p>Scorts verificadas</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- ARTICLES SECTION-->
+<section class="clearfix articlesSection">
+	<div class="container">
+		<div class="page-header text-center">
+			<h2>Noticias & Articulos <small>Los mas populares articulos </small></h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-xs-12">
+				<div class="thumbnail articleContent">
+					<%= image_tag("img/news/chica1.jpg", alt: "Image news", class: "img-responsive") %>
+					<div class="caption">
+						<h4>Nov 22, 2016   by <a href="#">Admin</a></h4>
+						<h3><a href="blog-details.html">Donec id dolor in erat imperdiet.</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-xs-12">
+				<div class="thumbnail articleContent">
+					<%= image_tag("img/news/chica2.jpg", alt: "Image news", class: "img-responsive") %>
+					<div class="caption">
+						<h4>Nov 22, 2016   by <a href="#">Admin</a></h4>
+						<h3><a href="blog-details.html">Donec id dolor in erat imperdiet.</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-xs-12">
+				<div class="thumbnail articleContent">
+					<%= image_tag("img/news/chica3.jpg", alt: "Image news", class: "img-responsive") %>
+					<div class="caption">
+						<h4>Nov 22, 2016   by <a href="#">Admin</a></h4>
+						<h3><a href="blog-details.html">Donec id dolor in erat imperdiet.</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+ <!-- LOGIN  MODAL -->
+  <div id="loginModal" tabindex="-1" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Log In to your Account</h4>
+        </div>
+        <div class="modal-body">
+          <form class="loginForm">
+            <div class="form-group">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <i class="fa fa-lock" aria-hidden="true"></i>
+              <input type="password" class="form-control" id="pwd" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block">Log In</button>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+              <a href="#" class="pull-right link">Fogot Password?</a>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <p>Don’t have an Account? <a href="#" class="link">Sign up</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
