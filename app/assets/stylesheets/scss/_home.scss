@@ -115,14 +115,14 @@
 .articlesSection{
 	padding: 50px 0;
 	@include tablet{
-		padding: 100px 0 95px 0;
+		padding: 50px 0;
 	}
 }
 .articlesArea{
 	background-color: #fbfbfb;
 	padding: 50px 0;
 	@include tablet{
-		padding: 100px 0 95px 0;
+		padding: 50px 0;
 	}
 }
 .articleContent{
@@ -424,7 +424,7 @@
 }
 /*=== 5.7 COUNT UP SECTION ===*/
 .countUpSection{
-	background-image: url("../img/background/bg-countdown.jpg");
+	background-image: url("../img/background/chica1.jpg");
 	background-attachment: fixed;
 	width: 100%;
 	-webkit-background-size: cover;
@@ -503,7 +503,7 @@
 		}
 	}
 	&.countUpVerTwo{
-		background-image: url("../img/background/bg-countdown-1.jpg");
+		background-image: url("../img/background/chica2.jpg");
     padding: 60px 0;
     @include tablet{
     	padding: 120px 0;
@@ -564,7 +564,7 @@
 .filterProtfolio{
 	padding: 50px 0;
 	@include tablet{
-		padding: 100px 0 85px 0;
+		padding: 50px 0 50px 0;
 	}
 }
 .bg-search{
@@ -586,7 +586,7 @@
 		width: 100%;
 		margin: 10px 0;
 		@include tablet{
-			width: 21%;
+			width: 40%;
 			margin: 0;
 		}
 		input{
@@ -624,6 +624,7 @@
 	border: 1px solid $border-color;
 	padding: 15px;
 	margin: 15px 0;
+	background-color: white;
 	@include tablet{
 		padding: 35px 30px;
 		margin: 0;
