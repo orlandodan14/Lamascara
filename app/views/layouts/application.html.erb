@@ -35,15 +35,17 @@
 
   <body>
 
-  	<%= render "shared/preloader" %>
-
   	<div class="main-wrapper">
 
-  		<%= render "shared/header" %>
+  		<% if !current_page?(root_path) %>
+  			<%= render "shared/header" %>
+  		<% end %>
 
     	<%= yield %>
 
-  		<%= render "shared/footer" %>
+  		<% if !current_page?(root_path) %>
+  			<%= render "shared/footer" %>
+  		<% end %>
     	
 	</div>
   </body>
