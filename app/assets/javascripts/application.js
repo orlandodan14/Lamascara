@@ -28,4 +28,3 @@
 //= require js/map
 //= require js/custom
 //= require rails-ujs
-//= require turbolinks

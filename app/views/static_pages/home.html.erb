@@ -1,396 +1,118 @@
-<!-- SLIDER SECTION -->
-<section class="main-slider" data-loop="true" data-autoplay="true" data-interval="7000">
-	<div class="inner">
+<!-- HEADER -->
+<header id="pageTop" class="header navbar-fixed-top">
 
-	<!-- Slide One -->
-	<div class="slide slide1" style="background-image: url(<%= asset_path "img/banner/chica1.jpg" %>);">
-	  <div class="container">
-	    <div class="slide-inner1 common-inner">
-	      <span class="h1 from-bottom">Elije a tu pareja</span>
-	      <span class="h4 from-bottom">La Mascara te ayuda a encontrar el placer cerca de ti</span><br>
-	    </div>
-	  </div>
-	</div>
+  <!-- TOP INFO BAR -->
 
-	<!-- Slide Two -->
-	<div class="slide slide2" style="background-image: url(<%= asset_path "img/banner/chica2.jpg" %>);">
-	  <div class="container">
-	    <div class="slide-inner2 common-inner">
-	      <span class="h1 from-bottom">Elije a tu pareja</span>
-	      <span class="h4 from-bottom">La Mascara te ayuda a encontrar el placer cerca de ti</span><br>
-	    </div>
-	  </div>
-	</div>
+  <div class="nav-wrapper">
 
-	<!-- Slide Three -->
-	<div class="slide slideResize slide4" style="background-image: url(<%= asset_path "img/banner/chica3.jpg" %>);">
-	  <div class="container">
-	    <div class="common-inner slide-inner4">
-	      <span class="h1 from-bottom">Elije a tu pareja</span>
-	      <span class="h4 from-bottom">La Mascara te ayuda a encontrar el placer cerca de ti</span><br>
-	    </div>
-	  </div>
-	</div>
-	</div>
-</section>
+    <div class="container-fluid header-bg">
+      <div class="row">
+        <div class="col-lg-4 col-sm-4 col-xs-6 header-left empty">empty
+        </div>
+        <div class="col-lg-8 col-sm-8 col-xs-6 header-right empty">empty
+        </div>
+      </div>
+    </div>
 
-<!-- CARS SECTION -->
-<section class="clearfix filterProtfolio">
-	<div class="container">
+    <!-- NAVBAR -->
+    <nav id="menuBar" class="navbar navbar-default lightHeader animated" role="navigation">
+      <div class="container">
 
-		<%= render 'shared/search' %>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to image_tag("img/logo-blue.png", alt: "logo"), root_path, class: 'navbar-brand' %>
+        </div>
 
-		<div class="row">
-	      <div class="col-xs-12">
-	        <div class="filter-container isotopeFilters">
-	          <ul class="list-inline filter">
-	            <li class="active"><a href="#" data-filter="*">Populares</a></li>
-	            <li><a href="#" data-filter=".recentItem">Recientes</a></li>
-	            <li><a href="#" data-filter=".featuredItem">Destacadas</a></li>
-	          </ul>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="row isotopeContainer" id="container">    
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector featuredItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/girl-4.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-grid.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	          	<h2><a href="category-grid.html">Monica <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-	            <p>19 años <a href="category-grid.html">Agencia</a></p>
-	            <h3>$80,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santiago, Providencia</p>
-	          	<p>1% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/girl-1.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-grid.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	          	<h2><a href="category-grid.html">Aura <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-	            <p>25 años <a href="category-grid.html">Modelo</a></p>
-	            <h3>$50,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santiago, Centro</p>
-	          	<p>5% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/girl-3.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-grid-right.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	          	<h2><a href="category-grid-right.html">Yasenny <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-	            <p>31 años  <a href="category-grid-right.html">Independiente</a></p>
-	            <h3>$30,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santiago, Colina</p>
-	          	<p>100% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector featuredItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/girl-2.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-grid.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	          	<h2><a href="category-grid.html">Robersy <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-	            <p>29 años  <a href="category-grid.html">Independiente</a></p>
-	            <h3>$60,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santigo, Puente Alto</p>
-	          	<p>5% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/girl-3.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-grid.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	          	<h2><a href="category-grid.html">Fernanda <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-	            <p>25 años <a href="category-grid.html">Modelo</a></p>
-	            <h3>$90,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santiago, Centro</p>
-	          	<p>5% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/girl-4.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-grid.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	          	<h2><a href="category-grid.html">Karina <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-	            <p>25 años <a href="category-grid.html">Modelo</a></p>
-	            <h3>$100,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santiago, Centro</p>
-	          	<p>5% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector featuredItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/car-1.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-grid.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	          	<h2><a href="category-grid.html">Laura <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-	            <p>25 años <a href="category-grid.html">Modelo</a></p>
-	            <h3>$150,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santiago, Centro</p>
-	          	<p>5% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/car-2.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-list-left.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	            <p>25 años <a href="category-grid.html">Modelo</a></p>
-	            <h3>$50,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santiago, Centro</p>
-	          	<p>5% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/car-4.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-grid.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	          	<h2><a href="category-grid.html">Yiliany <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-	            <p>25 años <a href="category-grid.html">Modelo</a></p>
-	            <h3>$55,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santiago, Centro</p>
-	          	<p>5% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector featuredItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/car-5.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-list-full.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	          	<h2><a href="category-list-full.html">Yeseina <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-	            <p>25 años <a href="category-grid.html">Modelo</a></p>
-	            <h3>$30,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santiago, Centro</p>
-	          	<p>5% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector featuredItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/car-6.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-list-left.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	          	<h2><a href="category-list-left.html">Mimi <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-	            <p>25 años <a href="category-grid.html">Modelo</a></p>
-	            <h3>$50,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santiago, Centro</p>
-	          	<p>5% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	      <div class="col-md-3 col-sm-4 col-xs-6 isotopeSelector recentItem">
-	        <article class="">
-	          <figure>
-	            <%= image_tag("img/cars/car-3.jpg", alt: "Image Protfolio", class: "img-responsive") %>
-	            <div class="overlay-background">
-	              <div class="inner"></div>
-	            </div>
-	            <a href="category-grid-right.html">
-	              <div class="overlay">
-	                <div class="overlayInfo">
-	                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 10 k</span>
-	                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 8</span>
-	                </div>
-	              </div>
-	            </a>
-	          </figure>
-	          <div class="figureBody">
-	          	<h2><a href="category-grid-right.html">Yulibeth <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-	            <p>25 años <a href="category-grid.html">Modelo</a></p>
-	            <h3>$50,000</h3>
-	          </div>
-	          <div class="figureFooter">
-	          	<p>Santiago, Recoleta</p>
-	          	<p>5% Retoque de fotos</p>
-	          </div>
-	        </article>
-	      </div>
-
-	    </div>
-	</div>
-</section>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+	            <li class=""><a href="blog.html">blog </a></li>
+              <li class=" dropdown megaDropMenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ubicacion<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="row dropdown-menu">
+                  <li class="col-sm-4 col-xs-12">
+                    <ul class="list-unstyled">
+                        <li><h5>Region Metropolitana</h5></li>
+                        <li><a href="category-grid.html">Santiago</a></li>
+                        <li><a href="category-grid-right.html">Las Condes</a></li>
+                        <li><a href="category-grid-full.html">Providencia</a></li>
+                        <li><h5>Antofagasta</h5></li>
+                        <li><a href="category-list-left.html">Antofagasta</a></li>
+                        <li><a href="category-list-right.html">Calama</a></li>
+                        <li><a href="category-list-full.html">Sierra Gorda</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-4 col-xs-12">
+                    <ul class="list-unstyled">
+                        <li><h5>Valparaiso</h5></li>
+                        <li><a href="listing-sidebar-map-left.html">Calera</a></li>
+                        <li><a href="listing-sidebar-map-right.html">Casa Blanca</a></li>
+                        <li><a href="listing-sidebar-map-full.html">Cartagena</a></li>
+                        <li><h5>Coquimbo</h5></li>
+                        <li><a href="listing-details-left.html">Coquimbo</a></li>
+                        <li><a href="listing-details-right.html">La Serena</a></li>
+                        <li><a href="listing-details-full.html">Ovalle</a></li>
+                    </ul>
+                  </li>
+                  <li class="col-sm-4 col-xs-12">
+                    <ul class="list-unstyled">
+                        <li class="mega-img">
+                            <a href=""><%= image_tag("img/works/works-big-3.png", alt: "") %></a>
+                        </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class=" dropdown singleDrop">
+                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Servicios <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="dashboard.html">Trato de Novia</a></li>
+                  <li><a href="add-listings.html">Acompanante</a></li>
+                  <li><a href="edit-listings.html">Streptease</a></li>
+                  <li><a href="listings.html">Orginas</a></li>
+                  <li><a href="profile.html">Lesbico</a></li>
+                  <li><a href="oders.html">Juguetes</a></li>
+                  <li><a href="oders.html">Fiestas</a></li>
+                  <li><a href="oders.html">Duplex</a></li>
+                  <li><a href="oders.html">Besos</a></li>
+                  <li><a href="oders.html">Fantasias sexuales</a></li>
+                </ul>
+              </li>
+              
+              <li class=" dropdown singleDrop">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Filtros<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="contact-us.html">Fotos certificadas</a></li>
+                  <li><a href="terms-of-services.html">Videos</a></li>
+                  <li><a href="sign-up.html">Chat</a></li>
+                  <li><a href="login.html">Modelos</a></li>
+                  <li><a href="pricing-table.html">Universitarias</a></li>
+                  <li><a href="payment-process.html">Primera vez</a></li>
+                  <li><a href="how-it-works.html">Maduras</a></li>
+                </ul>
+              </li>
+              <li class="dropdown singleDrop">
+	                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Para anunciar <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                  <li><a href="index.html">Condiciones</a></li>
+                  <li><a href="index-2.html">Precios y Formas de Pago</a></li>
+                  <li><a href="index-3.html">Contactanos</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+        </div>
+        <button class="btn btn-default navbar-btn" type="button" data-toggle="modal" data-target="#loginModal"> + <span>Anunciate</span> </button>
+      </div>
+    </nav>
+  </div>
+</header>
 
 <!-- BANNER SECTION -->
 <section class="clearfix homeBanner" style="background-image: url(<%= asset_path "img/background/home.jpg" %>);">
