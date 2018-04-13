@@ -96,13 +96,17 @@
                   <li><a href="payment-process.html">Primera vez</a></li>
                   <li><a href="how-it-works.html">Maduras</a></li>
                 </ul>
-              </li>
+              </li> 
               <li class="dropdown singleDrop">
-	                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Para anunciar <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+	                <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Para anunciantes <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 <ul class="dropdown-menu dropdown-menu-right">
+                <% if logged_in? %> 
+                  <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+                <% else %>
                   <li><a href="index.html">Condiciones</a></li>
                   <li><a href="index-2.html">Precios y Formas de Pago</a></li>
                   <li><a href="index-3.html">Contactanos</a></li>
+                <% end %>
                 </ul>
               </li>
               

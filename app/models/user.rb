@@ -12,7 +12,7 @@ class User < ApplicationRecord
 	validates :phone, 	 absence: true, length: { maximum: 15 }, format: { with: VALID_PHONE_REGEX }, numericality: true, allow_nil: true, allow_blank: true
 
 	has_secure_password
-	validates :password, presence: true, length: { minimum: 6 }
+	validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
 
 	# METHODS:
 	# Returns the hash digest of the given string.
