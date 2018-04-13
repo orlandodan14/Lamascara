@@ -1,0 +1,22 @@
+<%= form_for(:session, url: login_path, html: {class: "loginForm"}) do |f| %>
+	<div class="form-group">
+	 	<i class="fa fa-envelope" aria-hidden="true"></i>
+		<%= f.email_field :email, class: "form-control", placeholder: "Email" %>
+		<p class="help-block">Enter your Email*</p>
+	</div>
+	<div class="form-group">
+	    <i class="fa fa-lock" aria-hidden="true"></i>
+		<%= f.password_field :password, class: "form-control", placeholder: "Password" %>
+		<p class="help-block">Enter your password*</p>
+	</div>
+	<div class="form-group">
+		<%= f.label :remember_me do %>
+	        <%= f.check_box :remember_me %>
+	        <span>Remember me</span>
+	    <% end %>
+	  <a href="#" class="pull-right link">Fogot Password?</a>
+	</div>
+	<div class="form-group">
+		<%= f.button "Log In", class: "btn btn-primary btn-block" %>
+	</div>	
+<% end %>
