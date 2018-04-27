@@ -8,7 +8,8 @@
 User.create!(
              email: "example@gmail.com",
              password:              "foobar",
-             password_confirmation: "foobar")
+             password_confirmation: "foobar",
+             admin: true)
 
 99.times do |n|
   email = "example-#{n+1}@gmail.com"
