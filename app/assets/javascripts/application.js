@@ -27,3 +27,4 @@
 //= require js/single-map
 //= require js/map
 //= require js/custom
+//= require turbolinks
